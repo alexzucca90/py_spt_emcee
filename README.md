@@ -15,6 +15,11 @@ python test_emcee.py
 
 and check that the package emcee works.
 
+You need to install LAPACK on your laptop, use
+```bash
+sudo apt-get install libblas-dev liblapack-dev
+```
+
 Then, install the SPT python wrapper with :
 ```bash
 f2py -llapack -c fortran/SPT_wrapper.f90 fortran/PySPT.f90 -m python_spt.pyspt
